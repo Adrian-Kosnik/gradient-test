@@ -1,0 +1,127 @@
+body{
+    background: white;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+
+  .container{
+    width: 1000px;
+    height: 500px;
+    border: 1px solid limegreen;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .main{
+    width:330px;
+    height:330px;
+    border:1px solid #CCC;
+    position:absolute;
+    top:10px; bottom:0; left:-20;right:0;
+    margin:auto;
+    border-radius:50%;
+    filter: blur(15rem);
+  }
+  
+  .circle{
+    width:400px;
+    height:800px;
+    background:rgb(95, 190, 241);
+    border-radius:50%;
+    position:absolute;
+    top:0; bottom:0; left:0;right:0;
+    overflow:hidden;
+    margin:auto;
+    animation: circle 6s linear infinite;
+  }
+  
+  @keyframes circle{
+    0%{
+      transform:rotate(0deg)
+                translate(-165px)
+                rotate(0deg);
+    
+    }
+    100%{
+      transform:rotate(360deg)
+                translate(-165px)
+                rotate(-360deg);
+    }
+  }
+  
+  .main2{
+    width:330px;
+    height:330px;
+    border:1px solid #CCC;
+    position:absolute;
+    top:-1; bottom:10; left:-110;right:-100;
+    margin:auto;
+    border-radius:50%;
+    filter: blur(15rem);
+  }
+  
+  .circle2{
+    width:400px;
+    height:600px;
+    background:rgb(255, 103, 103);
+    border-radius:50%;
+    position:absolute;
+    top:0; bottom:0; left:0;right:20;
+    overflow:hidden;
+    margin:auto;
+    animation: circle 6s linear infinite;
+  }
+  
+  @keyframes circle2{
+    100%{
+      transform:rotate(0deg)
+                translate(165px)
+                rotate(-0deg);
+    
+    }
+    0%{
+      transform:rotate(60deg)
+                translate(165px)
+                rotate(360deg);
+    }
+  }
+
+  .main3{
+    width:330px;
+    height:330px;
+    border:1px solid #CCC;
+    position:relative;
+    top:0; bottom:0; left:40;right:90;
+    margin:auto;
+    border-radius:50%;
+    filter: blur(15rem);
+  }
+  
+  .circle3{
+    width:600px;
+    height:500px;
+    background:rgb(255, 149, 79);
+    border-radius:50%;
+    position:absolute;
+    top:0; bottom:0; left:50;right:0;
+    overflow:hidden;
+    margin:auto;
+    animation: circle 6s linear infinite reverse;
+  }
+  
+  @keyframes circle2{
+    100%{
+      transform:rotate(0deg)
+                translate(165px)
+                rotate(-0deg);
+    
+    }
+    0%{
+      transform:rotate(60deg)
+                translate(165px)
+                rotate(360deg);
+    }
+  }
